@@ -6,18 +6,19 @@ package com.mycompany.csc325_oop_designreview_lab;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author Jessalyn Otero
  */
 public class Student extends Human{
-	// ToDo 1: Make this class a child of Human
 
     private double GPA;
 
+	//Student Constructor
     public Student(String name, short age, double GPA) {
         super(name, age);
         this.GPA = GPA;
     }
 
+	//Getters and setters
     public double getGPA() {
         return GPA;
     }

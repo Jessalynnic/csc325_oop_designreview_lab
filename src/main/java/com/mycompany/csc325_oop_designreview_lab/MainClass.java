@@ -4,6 +4,8 @@
 
 package com.mycompany.csc325_oop_designreview_lab;
 
+import java.util.Scanner;
+
 /**
  *
  * @author MoaathAlrajab
@@ -11,34 +13,60 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class MainClass {
 
  public static void main(String[] args) {
-		// ToDo 5: Fix the error
+	 Scanner scanner = new Scanner(System.in);
 
-		// ToDo 6: Fix the constructor of the Student class
+	 // Input for Student
+	 System.out.print("Enter name for Student: ");
+	 String studentName = scanner.nextLine();
 
-                // Todo 7: Create two classes for Freshman and Senior 
+	 System.out.print("Enter age for Student: ");
+	 short studentAge = scanner.nextShort();
 
-                // ToDo 8: The senior class should have a minimum of 85 credits  
+	 System.out.print("Enter GPA for Student: ");
+	 double studentGPA = scanner.nextDouble();
 
-		// ToDo 9: Add a toString method for the Student class
-		// ToDo 10: Add a toString method for the Freshman class
+	 scanner.nextLine();
 
-		Student std1= new Student("James", 20);
-                // ToDo 11: Add a toString method for the Senior class
+	 // Input for Freshman
+	 System.out.print("Enter name for Freshman: ");
+	 String freshmanName = scanner.nextLine();
 
-		Freshman std1= new Student("James", 20, 12); // name, age, credits
+	 System.out.print("Enter age for Freshman: ");
+	 short freshmanAge = scanner.nextShort();
 
-                Senior std2 = new Student("John", 30, 90);
+	 System.out.print("Enter credits for Freshman: ");
+	 int freshmanCredits = scanner.nextInt();
 
-		// ToDo 12: Set the gpa of the student using the scanner and user
-		// 			input and then print the output.
+	 System.out.print("Enter GPA for Freshman: ");
+	 double freshmanGPA = scanner.nextDouble();
 
-		System.out.println(std1);
+	 scanner.nextLine();
 
-                System.out.println(std2);
+	 // Input for Senior
+	 System.out.print("Enter name for Senior: ");
+	 String seniorName = scanner.nextLine();
 
-		// ToDo 13: add comments and explain your code
+	 System.out.print("Enter age for Senior: ");
+	 short seniorAge = scanner.nextShort();
 
+	 System.out.print("Enter credits for Senior (must be 85 or more): ");
+	 int seniorCredits = scanner.nextInt();
+
+	 System.out.print("Enter GPA for Senior: ");
+	 double seniorGPA = scanner.nextDouble();
+
+
+	 Student std1= new Student(studentName, studentAge, studentGPA);
+
+	 Freshman std2= new Freshman(freshmanName, freshmanAge, freshmanCredits, freshmanGPA);
+
+	 Senior std3 = new Senior(seniorName, seniorAge, seniorCredits, seniorGPA);
+
+	 System.out.println(std1);
+	 System.out.println(std2);
+	 System.out.println(std3);
+
+	 scanner.close();
 	}
-
 }
 

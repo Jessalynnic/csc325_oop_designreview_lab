@@ -6,7 +6,7 @@ package com.mycompany.csc325_oop_designreview_lab;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author Jessalyn Otero
  */
 public abstract class Human {
     private String name;

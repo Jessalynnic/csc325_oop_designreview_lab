@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author Jessalyn Otero
  */
 public class MainClass {
 
@@ -56,6 +56,7 @@ public class MainClass {
 	 double seniorGPA = scanner.nextDouble();
 
 
+	 //Student, Freshman and Senior instances
 	 Student std1= new Student(studentName, studentAge, studentGPA);
 
 	 Freshman std2= new Freshman(freshmanName, freshmanAge, freshmanCredits, freshmanGPA);
